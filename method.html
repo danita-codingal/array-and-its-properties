@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METHOD IN JS</title>
+</head>
+<body>
+    <h2>METHOD IN JS</h2>
+    <p>A method in JavaScript is a function that is associated with an object. It is a property of an object that can be called to perform a specific action. Methods are used to manipulate the data of an object or to perform operations on it. For example, the Array object has several built-in methods such as push(), pop(), shift(), unshift(), and many more that allow you to manipulate the elements of an array.</p>
+    <p id="demo"></p>
+    <p id="my first pop"></p>
+    <p id="my first join"></p>
+    <script>
+        var myArray = [1, 2, 3, 4, 5];
+        document.getElementById("demo").innerHTML = "The array is: " + myArray;
+        document.getElementById("my first pop").innerHTML = "The popped element is: " + myArray.pop();
+        document.getElementById("my first join").innerHTML = "The joined string is: " + myArray.join(" - ");
+    </script>
+</body>
+</html>
