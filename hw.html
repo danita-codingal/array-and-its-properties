@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IN THIS PROJECT, I WILL BE CREATING VARIABLES WITH OBJECT AND AS ARRAY AND DISPLAY THEM BY USING OBJECTS KEYS AND ALSO BY INDEX VALUE OF ARRAY AND BY USING JOIN AND POP FUNCTION DISPLAY WHOLE ARRAY
+    </title>
+</head>
+<body>
+    <h2>IN THIS PROJECT, I WILL BE CREATING VARIABLES WITH OBJECT AND AS ARRAY AND DISPLAY THEM BY USING OBJECTS KEYS AND ALSO BY INDEX VALUE OF ARRAY AND BY USING JOIN AND POP FUNCTION DISPLAY WHOLE ARRAY</h2>
+    <p id="demo"></p>
+    <script>
+        // Create an object
+        var myObject = {
+            name: "DANITA",
+            age: 12,
+            city: "SANGRUR"
+        };
+
+        // Display the keys of the object
+        document.getElementById("demo").innerHTML = "The keys of the object are: " + Object.keys(myObject).join(", ");
+
+        // Create an array
+        var myArray = ["Apple", "Banana", "Cherry"];
+
+        // Display the first element of the array
+        document.getElementById("demo").innerHTML += "<br>The first element of the array is: " + myArray[0];
+
+        // Display the whole array using join
+        document.getElementById("demo").innerHTML += "<br>The whole array is: " + myArray.join(", ");
+
+        // Remove the last element of the array using pop and display the updated array
+        myArray.pop();
+        document.getElementById("demo").innerHTML += "<br>After popping, the array is: " + myArray.join(", ");
+    </script>
+    
+</body>
+</html>
